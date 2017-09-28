@@ -22,6 +22,7 @@ import static org.junit.Assert.assertEquals;
 @Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest
+//@DataMongoTest
 public class RecipeServiceIT {
 
     public static final String NEW_DESCRIPTION = "New Description";
@@ -38,7 +39,7 @@ public class RecipeServiceIT {
     @Autowired
     RecipeToRecipeCommand recipeToRecipeCommand;
 
-    @Transactional
+//    @Transactional
     @Test
     public void testSaveOfDescription() throws Exception {
         //given
